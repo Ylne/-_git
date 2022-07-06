@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"stm_uart_dma\startup_stm32f103xb.o"
+"stm_uart_dma\main.o"
+"stm_uart_dma\gpio.o"
+"stm_uart_dma\dma.o"
+"stm_uart_dma\usart.o"
+"stm_uart_dma\stm32f1xx_it.o"
+"stm_uart_dma\stm32f1xx_hal_msp.o"
+"stm_uart_dma\stm32f1xx_hal_gpio_ex.o"
+"stm_uart_dma\stm32f1xx_hal_tim.o"
+"stm_uart_dma\stm32f1xx_hal_tim_ex.o"
+"stm_uart_dma\stm32f1xx_hal_uart.o"
+"stm_uart_dma\stm32f1xx_hal.o"
+"stm_uart_dma\stm32f1xx_hal_rcc.o"
+"stm_uart_dma\stm32f1xx_hal_rcc_ex.o"
+"stm_uart_dma\stm32f1xx_hal_gpio.o"
+"stm_uart_dma\stm32f1xx_hal_dma.o"
+"stm_uart_dma\stm32f1xx_hal_cortex.o"
+"stm_uart_dma\stm32f1xx_hal_pwr.o"
+"stm_uart_dma\stm32f1xx_hal_flash.o"
+"stm_uart_dma\stm32f1xx_hal_flash_ex.o"
+"stm_uart_dma\stm32f1xx_hal_exti.o"
+"stm_uart_dma\system_stm32f1xx.o"
+--strict --scatter "STM_UART_DMA\STM_UART_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM_UART_DMA.map" -o STM_UART_DMA\STM_UART_DMA.axf

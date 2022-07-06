@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"stm_tim_pwm\startup_stm32f103xb.o"
+"stm_tim_pwm\main.o"
+"stm_tim_pwm\gpio.o"
+"stm_tim_pwm\tim.o"
+"stm_tim_pwm\usart.o"
+"stm_tim_pwm\stm32f1xx_it.o"
+"stm_tim_pwm\stm32f1xx_hal_msp.o"
+"stm_tim_pwm\stm32f1xx_hal_gpio_ex.o"
+"stm_tim_pwm\stm32f1xx_hal_tim.o"
+"stm_tim_pwm\stm32f1xx_hal_tim_ex.o"
+"stm_tim_pwm\stm32f1xx_hal.o"
+"stm_tim_pwm\stm32f1xx_hal_rcc.o"
+"stm_tim_pwm\stm32f1xx_hal_rcc_ex.o"
+"stm_tim_pwm\stm32f1xx_hal_gpio.o"
+"stm_tim_pwm\stm32f1xx_hal_dma.o"
+"stm_tim_pwm\stm32f1xx_hal_cortex.o"
+"stm_tim_pwm\stm32f1xx_hal_pwr.o"
+"stm_tim_pwm\stm32f1xx_hal_flash.o"
+"stm_tim_pwm\stm32f1xx_hal_flash_ex.o"
+"stm_tim_pwm\stm32f1xx_hal_exti.o"
+"stm_tim_pwm\stm32f1xx_hal_uart.o"
+"stm_tim_pwm\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "STM_TIM_PWM\STM_TIM_PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM_TIM_PWM.map" -o STM_TIM_PWM\STM_TIM_PWM.axf

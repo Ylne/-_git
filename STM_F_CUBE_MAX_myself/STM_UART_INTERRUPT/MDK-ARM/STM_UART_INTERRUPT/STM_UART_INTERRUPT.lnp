@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"stm_uart_interrupt\startup_stm32f103xb.o"
+"stm_uart_interrupt\main.o"
+"stm_uart_interrupt\gpio.o"
+"stm_uart_interrupt\usart.o"
+"stm_uart_interrupt\stm32f1xx_it.o"
+"stm_uart_interrupt\stm32f1xx_hal_msp.o"
+"stm_uart_interrupt\stm32f1xx_hal_gpio_ex.o"
+"stm_uart_interrupt\stm32f1xx_hal_tim.o"
+"stm_uart_interrupt\stm32f1xx_hal_tim_ex.o"
+"stm_uart_interrupt\stm32f1xx_hal_uart.o"
+"stm_uart_interrupt\stm32f1xx_hal.o"
+"stm_uart_interrupt\stm32f1xx_hal_rcc.o"
+"stm_uart_interrupt\stm32f1xx_hal_rcc_ex.o"
+"stm_uart_interrupt\stm32f1xx_hal_gpio.o"
+"stm_uart_interrupt\stm32f1xx_hal_dma.o"
+"stm_uart_interrupt\stm32f1xx_hal_cortex.o"
+"stm_uart_interrupt\stm32f1xx_hal_pwr.o"
+"stm_uart_interrupt\stm32f1xx_hal_flash.o"
+"stm_uart_interrupt\stm32f1xx_hal_flash_ex.o"
+"stm_uart_interrupt\stm32f1xx_hal_exti.o"
+"stm_uart_interrupt\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "STM_UART_INTERRUPT\STM_UART_INTERRUPT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM_UART_INTERRUPT.map" -o STM_UART_INTERRUPT\STM_UART_INTERRUPT.axf

@@ -1,0 +1,1 @@
+stm_can_first\startup_stm32f103xb.o: startup_stm32f103xb.s

@@ -1,0 +1,1 @@
+stm32_small_car_write_pin\startup_stm32f103xb.o: startup_stm32f103xb.s

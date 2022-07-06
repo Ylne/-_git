@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"stm_iic_second\startup_stm32f103xb.o"
+"stm_iic_second\main.o"
+"stm_iic_second\gpio.o"
+"stm_iic_second\stm32f1xx_it.o"
+"stm_iic_second\stm32f1xx_hal_msp.o"
+"stm_iic_second\stm32f1xx_hal_gpio_ex.o"
+"stm_iic_second\stm32f1xx_hal_tim.o"
+"stm_iic_second\stm32f1xx_hal_tim_ex.o"
+"stm_iic_second\stm32f1xx_hal.o"
+"stm_iic_second\stm32f1xx_hal_rcc.o"
+"stm_iic_second\stm32f1xx_hal_rcc_ex.o"
+"stm_iic_second\stm32f1xx_hal_gpio.o"
+"stm_iic_second\stm32f1xx_hal_dma.o"
+"stm_iic_second\stm32f1xx_hal_cortex.o"
+"stm_iic_second\stm32f1xx_hal_pwr.o"
+"stm_iic_second\stm32f1xx_hal_flash.o"
+"stm_iic_second\stm32f1xx_hal_flash_ex.o"
+"stm_iic_second\stm32f1xx_hal_exti.o"
+"stm_iic_second\system_stm32f1xx.o"
+--strict --scatter "STM_iic_second\STM_iic_second.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM_iic_second.map" -o STM_iic_second\STM_iic_second.axf
